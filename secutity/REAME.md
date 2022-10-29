@@ -33,3 +33,9 @@ Le stockage des mots de passe des utilisateurs par le vérifieur doit être réa
 ## Cookies
 
 Les cookies ont de multiples usages : ils peuvent servir à mémoriser votre identifiant client auprès d'un site marchand, le contenu courant de votre panier d'achat, la langue d'affichage de la page web, un identifiant permettant de tracer votre navigation à des fins statistiques ou publicitaires, etc.
+
+## API
+
+Une API, ou interface de programmation d’application, permettent à votre produit ou service de communiquer avec d'autres produits et services sans connaître les détails de leur mise en œuvre.
+ 
+Envoyer json 80% DU TEMPS
