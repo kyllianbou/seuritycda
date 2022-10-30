@@ -46,7 +46,7 @@ Un processus ou une application sans état est indépendant. Il ne stocke pas de
 
 Par exemple, une recherche en ligne pour répondre à une question quelconque est une transaction sans état. Vous tapez votre question dans le moteur de recherche et appuyez sur Entrée. Si votre transaction est accidentellement interrompue ou fermée, vous devez en démarrer une nouvelle. Les transactions sans état sont comparables à des distributeurs automatiques : une seule requête et une seule réponse. 
 
-## API STATEful
+## API STATEfull
 
 Les applications et processus avec état, quant à eux, peuvent être réutilisés indéfiniment. Les plateformes bancaires en ligne et les messageries en sont deux exemples. Les transactions précédentes sont prises en compte et peuvent affecter la transaction actuelle. C'est pour cela que les applications avec état utilisent les mêmes serveurs chaque fois qu'elles traitent une requête d'un utilisateur. 
 
