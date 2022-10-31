@@ -51,3 +51,7 @@ Par exemple, une recherche en ligne pour répondre à une question quelconque es
 Les applications et processus avec état, quant à eux, peuvent être réutilisés indéfiniment. Les plateformes bancaires en ligne et les messageries en sont deux exemples. Les transactions précédentes sont prises en compte et peuvent affecter la transaction actuelle. C'est pour cela que les applications avec état utilisent les mêmes serveurs chaque fois qu'elles traitent une requête d'un utilisateur. 
 
 La majorité des applications que nous utilisons au quotidien sont des applications avec état. Toutefois, les technologies évoluent et les microservices ainsi que les conteneurs facilitent le développement et le déploiement d'applications dans le cloud. 
+
+## Tokens
+
+Les jetons d'identification sont utilisés dans l'authentification basée sur les jetons pour mettre en cache les informations de profil utilisateur et les fournir à une application cliente, offrant ainsi de meilleures performances et une meilleure expérience. L'application reçoit un jeton d'identification après qu'un utilisateur s'est authentifié avec succès, puis consomme le jeton d'identification et en extrait les informations de l'utilisateur, qu'elle peut ensuite utiliser pour personnaliser l'expérience de l'utilisateur.
