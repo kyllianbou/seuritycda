@@ -97,3 +97,9 @@ Les bases de stockage de données hors-ligne localStorage et sessionStorage sont
 
 Les bases de données locales respectent la contrainte de Same-Origin Policy. Les données manipu- lées au sein d’une Origin ne sont visibles et accessibles que par cette Origin. Il s’agit cependant de la seule mesure implémentée permettant le contrôle d’accès à ces données. Au sein d’une même Origin, tous les scripts JavaScript accèdent aux mêmes bases localStorage et sessionStorage.
 
+## Menaces et objectifs des attaquants
+
+- La compromission des ressources applicatives est une violation de l’intégrité du contenu, dont une conséquence peut être la défiguration 2 du site. Une telle attaque a pour objectif de modifier le site pour remplacer le contenu légitime par un contenu choisi par l’attaquant. Il s’agit, par exemple, de relayer un message politique, de dénigrer le propriétaire du site ou simplement de revendiquer l’attaque comme preuve d’un savoir-faire. Une perte d’intégrité peut aussi résulter en la conduite d’une attaque par point d’eau (watering hole), qui tend un piège aux visiteurs.
+- Le vol de données est une attaque qui provoque la perte de la confidentialité de certaines don- nées (authentifiants, informations personnelles, informations bancaires, etc.). Elle est réalisée dans un but souvent lucratif et aboutit la plupart du temps à des usurpations d’identité ou à des paiements frauduleux.
+- Le déni de service 3 a pour objet de rendre indisponible le site attaqué pour ses utilisateurs légitimes que ce soit par l’arrêt ou par un ralentissement considérable du service.
+
