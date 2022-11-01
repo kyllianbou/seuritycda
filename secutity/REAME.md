@@ -2,7 +2,7 @@
 
 ## HTTPS && ! HTTP
 
-![](https.png)
+![](img/https.png)
 
 La mise en place de HTTPS sur un site ou une application web est une garantie de sécurité qui repose sur TLS pour assurer la confidentialité et l’intégrité des informations échangées, ainsi que l’authenticité du serveur contacté.
 
@@ -34,13 +34,13 @@ Le stockage des mots de passe des utilisateurs par le vérifieur doit être réa
 
 ## Cookies
 
-![](cookies.jpeg)
+![](img/cookies.jpeg)
 
 Les cookies ont de multiples usages : ils peuvent servir à mémoriser votre identifiant client auprès d'un site marchand, le contenu courant de votre panier d'achat, la langue d'affichage de la page web, un identifiant permettant de tracer votre navigation à des fins statistiques ou publicitaires, etc.
 
 ## API
 
-![](API.png)
+![](img/API.png)
 
 Une API, ou interface de programmation d’application, permettent à votre produit ou service de communiquer avec d'autres produits et services sans connaître les détails de leur mise en œuvre.
 
@@ -52,7 +52,7 @@ Un processus ou une application sans état est indépendant. Il ne stocke pas de
 
 Par exemple, une recherche en ligne pour répondre à une question quelconque est une transaction sans état. Vous tapez votre question dans le moteur de recherche et appuyez sur Entrée. Si votre transaction est accidentellement interrompue ou fermée, vous devez en démarrer une nouvelle. Les transactions sans état sont comparables à des distributeurs automatiques : une seule requête et une seule réponse. 
 
-![](state.png)
+![](img/state.png)
 
 ## API STATEfull
 
@@ -62,13 +62,13 @@ La majorité des applications que nous utilisons au quotidien sont des applicati
 
 ## Tokens
 
-![](tok.jpeg)
+![](img/tok.jpeg)
 
 Les jetons d'identification sont utilisés dans l'authentification basée sur les jetons pour mettre en cache les informations de profil utilisateur et les fournir à une application cliente, offrant ainsi de meilleures performances et une meilleure expérience. L'application reçoit un jeton d'identification après qu'un utilisateur s'est authentifié avec succès, puis consomme le jeton d'identification et en extrait les informations de l'utilisateur, qu'elle peut ensuite utiliser pour personnaliser l'expérience de l'utilisateur. 
 
 ## injection SQLi
 
-![](SQL.jpeg)
+![](img/SQL.jpeg)
 
 SQL (Structured Query Language) est un langage qui nous permet d’interagir avec des bases de données. Les applications Web modernes utilisent des bases de données pour gérer les données et afficher un contenu dynamique aux lecteurs.
 
