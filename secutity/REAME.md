@@ -83,3 +83,17 @@ On distingue trois causes principales à l’origine des vulnérabilités XSS. P
 
 La génération de code JavaScript à la volée est parfois utilisée afin d’intégrer des données en entrée transmises sous forme de chaînes de caractères. Cette mauvaise pratique est une opportunité pour un attaquant d’exploiter la vulnérabilité XSS introduite par l’usage de la fonction JavaScript eval(). En effet, l’utilisation de la fonction de désérialisation eval() avec une chaîne de caractères forgée permet à un attaquant de modifier le contenu et le comportement du site.
 L’usage de la fonction eval est donc à proscrire au profit, pour l’intégration de données struc- turées, de l’utilisation du format JSON et de la méthode associée JSON.parse.
+
+## Défense en profondeur
+
+protection indépendantes en face de chaque menace envisagée.
+Il est plus facile d’appliquer ce principe si le système à sécuriser est composé d’unités distinctes, aux interactions bien définies et possédant leurs propres mécanismes de sécurité. La défense en profondeur demande à ce que soient mises en œuvre les mesures de protection nécessaires et disponibles au niveau de chaque unité. Une mauvaise approche est, par exemple, de concentrer toutes les mesures de sécurité au niveau du point d’entrée du système et de constater que les fonctions internes sont complètement exposées en cas de vulnérabilité en amont, ou encore de ne considérer que le risque sur l’infrastructure en ne plaçant comme élément de sécurité qu’un simple pare-feu périmétrique.
+
+Dans l’idéal, chaque brique logicielle de l’application web participe à la protection de l’ensemble du système. L’architecture logicielle du site web ainsi que l’infrastructure d’hébergement doivent participer à la défense en profondeur.
+
+## Précaution d'usage des bases de données de type Web Storage
+
+Les bases de stockage de données hors-ligne localStorage et sessionStorage sont des bases de données de type clé / valeur permettant l’enregistrement de données côté client par Origin respectivement persistantes et non persistantes. Elles font partie du standard HTML.
+
+Les bases de données locales respectent la contrainte de Same-Origin Policy. Les données manipu- lées au sein d’une Origin ne sont visibles et accessibles que par cette Origin. Il s’agit cependant de la seule mesure implémentée permettant le contrôle d’accès à ces données. Au sein d’une même Origin, tous les scripts JavaScript accèdent aux mêmes bases localStorage et sessionStorage.
+
