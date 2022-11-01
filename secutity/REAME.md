@@ -74,3 +74,12 @@ SQL (Structured Query Language) est un langage qui nous permet d’interagir ave
 
 L’injection SQL, ou SQLi, est une attaque sur une application web en compromettant sa base de données par des déclarations SQL malveillantes.
 
+## Protection contre les vulnérabilités XSS
+
+Il existe de nombreux scénarios d’attaques mettant en jeu une vulnérabilité XSS. Par exemple, s’il est possible d’injecter du contenu dans une page au travers d’une variableGET12, un attaquant peut inciter (par exemple au moyen d’un courrier électronique trompeur) une victime à cliquer sur un lien fabriqué dans l’objectif d’appeler une page au contenu vulnérable et insérer dans celle- ci un script malveillant. L’attaquant pourra alors contrôler le navigateur de la victime qui pense pourtant visiter un site de confiance. Il est ainsi en mesure, par exemple, de voler la session de la victime et d’usurper son identité sur le site.
+On distingue trois causes principales à l’origine des vulnérabilités XSS. Pour chacune d’entre elles, il existe des bonnes pratiques de développement qui permettent de réduire le risque d’une attaque XSS en diminuant la probabilité d’apparition de telles vulnérabilités.
+
+## Maîtrise de l'évaluation de code
+
+La génération de code JavaScript à la volée est parfois utilisée afin d’intégrer des données en entrée transmises sous forme de chaînes de caractères. Cette mauvaise pratique est une opportunité pour un attaquant d’exploiter la vulnérabilité XSS introduite par l’usage de la fonction JavaScript eval(). En effet, l’utilisation de la fonction de désérialisation eval() avec une chaîne de caractères forgée permet à un attaquant de modifier le contenu et le comportement du site.
+L’usage de la fonction eval est donc à proscrire au profit, pour l’intégration de données struc- turées, de l’utilisation du format JSON et de la méthode associée JSON.parse.
