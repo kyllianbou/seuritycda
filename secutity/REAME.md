@@ -103,3 +103,5 @@ Les bases de données locales respectent la contrainte de Same-Origin Policy. Le
 - Le vol de données est une attaque qui provoque la perte de la confidentialité de certaines don- nées (authentifiants, informations personnelles, informations bancaires, etc.). Elle est réalisée dans un but souvent lucratif et aboutit la plupart du temps à des usurpations d’identité ou à des paiements frauduleux.
 - Le déni de service 3 a pour objet de rendre indisponible le site attaqué pour ses utilisateurs légitimes que ce soit par l’arrêt ou par un ralentissement considérable du service.
 
+![](img/hack.jpeg)
+
